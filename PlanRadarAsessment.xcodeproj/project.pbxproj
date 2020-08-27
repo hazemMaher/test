@@ -38,10 +38,10 @@
 		A1BA479724F8257E006B604D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA479024F8257E006B604D /* Router.swift */; };
 		A1BA479824F8257E006B604D /* RouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA479124F8257E006B604D /* RouterImplementation.swift */; };
 		A1BA479924F8257E006B604D /* RESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA479424F8257E006B604D /* RESTClient.m */; };
-		A1BA47AF24F82839006B604D /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA47AB24F82839006B604D /* City+CoreDataClass.swift */; };
-		A1BA47B024F82839006B604D /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA47AC24F82839006B604D /* City+CoreDataProperties.swift */; };
-		A1BA47B124F82839006B604D /* WeatherInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA47AD24F82839006B604D /* WeatherInfo+CoreDataClass.swift */; };
-		A1BA47B224F82839006B604D /* WeatherInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA47AE24F82839006B604D /* WeatherInfo+CoreDataProperties.swift */; };
+		A1BA47B724F82C34006B604D /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA47B324F82C34006B604D /* City+CoreDataClass.swift */; };
+		A1BA47B824F82C34006B604D /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA47B424F82C34006B604D /* City+CoreDataProperties.swift */; };
+		A1BA47B924F82C34006B604D /* WeatherInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA47B524F82C34006B604D /* WeatherInfo+CoreDataClass.swift */; };
+		A1BA47BA24F82C34006B604D /* WeatherInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA47B624F82C34006B604D /* WeatherInfo+CoreDataProperties.swift */; };
 		C7FBF89B10722947E42891AF /* Pods_PlanRadarAsessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FFF7260B927F2D6110AAE9 /* Pods_PlanRadarAsessment.framework */; };
 		EA7A2CA7211B7CE384A393C1 /* Pods_PlanRadarAsessmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8069AFDE19912DAB986D05A5 /* Pods_PlanRadarAsessmentTests.framework */; };
 /* End PBXBuildFile section */
@@ -99,10 +99,10 @@
 		A1BA479124F8257E006B604D /* RouterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImplementation.swift; sourceTree = "<group>"; };
 		A1BA479324F8257E006B604D /* RESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClient.h; sourceTree = "<group>"; };
 		A1BA479424F8257E006B604D /* RESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClient.m; sourceTree = "<group>"; };
-		A1BA47AB24F82839006B604D /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		A1BA47AC24F82839006B604D /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		A1BA47AD24F82839006B604D /* WeatherInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherInfo+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		A1BA47AE24F82839006B604D /* WeatherInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherInfo+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A1BA47B324F82C34006B604D /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A1BA47B424F82C34006B604D /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A1BA47B524F82C34006B604D /* WeatherInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A1BA47B624F82C34006B604D /* WeatherInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B37CD9CB5F8707C94DE78229 /* Pods-PlanRadarAsessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadarAsessment.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadarAsessment/Pods-PlanRadarAsessment.debug.xcconfig"; sourceTree = "<group>"; };
 		E5FFF7260B927F2D6110AAE9 /* Pods_PlanRadarAsessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanRadarAsessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -381,10 +381,10 @@
 		A1BA47AA24F82812006B604D /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				A1BA47AB24F82839006B604D /* City+CoreDataClass.swift */,
-				A1BA47AC24F82839006B604D /* City+CoreDataProperties.swift */,
-				A1BA47AD24F82839006B604D /* WeatherInfo+CoreDataClass.swift */,
-				A1BA47AE24F82839006B604D /* WeatherInfo+CoreDataProperties.swift */,
+				A1BA47B324F82C34006B604D /* City+CoreDataClass.swift */,
+				A1BA47B424F82C34006B604D /* City+CoreDataProperties.swift */,
+				A1BA47B524F82C34006B604D /* WeatherInfo+CoreDataClass.swift */,
+				A1BA47B624F82C34006B604D /* WeatherInfo+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -592,17 +592,17 @@
 				A1B5D2A224F7BD8100617CE0 /* StateHandlerTableView.swift in Sources */,
 				A1B5D29324F7BC4800617CE0 /* UIViewController+Extensions.swift in Sources */,
 				A1B5D25124F7B80B00617CE0 /* CityListViewController.swift in Sources */,
-				A1BA47B024F82839006B604D /* City+CoreDataProperties.swift in Sources */,
-				A1BA47B124F82839006B604D /* WeatherInfo+CoreDataClass.swift in Sources */,
+				A1BA47B824F82C34006B604D /* City+CoreDataProperties.swift in Sources */,
+				A1BA47B924F82C34006B604D /* WeatherInfo+CoreDataClass.swift in Sources */,
 				A1BA479724F8257E006B604D /* Router.swift in Sources */,
 				A1BA479624F8257E006B604D /* BaseCoordinator.m in Sources */,
-				A1BA47AF24F82839006B604D /* City+CoreDataClass.swift in Sources */,
+				A1BA47B724F82C34006B604D /* City+CoreDataClass.swift in Sources */,
 				A1B5D29524F7BC4800617CE0 /* UITableView+Extensions.swift in Sources */,
 				A1B5D29D24F7BC7600617CE0 /* AlertView.swift in Sources */,
 				A1BA479924F8257E006B604D /* RESTClient.m in Sources */,
 				9B22002524F7E70E00D1289E /* DatastoreManager.swift in Sources */,
 				A1B5D24D24F7B80B00617CE0 /* AppDelegate.swift in Sources */,
-				A1BA47B224F82839006B604D /* WeatherInfo+CoreDataProperties.swift in Sources */,
+				A1BA47BA24F82C34006B604D /* WeatherInfo+CoreDataProperties.swift in Sources */,
 				A1BA479824F8257E006B604D /* RouterImplementation.swift in Sources */,
 				A1B5D24F24F7B80B00617CE0 /* SceneDelegate.swift in Sources */,
 				A1B5D25724F7B80B00617CE0 /* PlanRadarAsessment.xcdatamodeld in Sources */,
