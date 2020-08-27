@@ -16,11 +16,11 @@ extension WeatherInfo {
         return NSFetchRequest<WeatherInfo>(entityName: "WeatherInfo")
     }
 
-    @NSManaged public var city_description: String?
+    @NSManaged public var cityDescription: String?
     @NSManaged public var humidity: Int64
-    @NSManaged public var icon_id: Int64
-    @NSManaged public var temp: Int64
-    @NSManaged public var winnd_speed: Int64
+    @NSManaged public var iconID: String?
+    @NSManaged public var temp: Float
+    @NSManaged public var windSpeed: Float
     @NSManaged public var city: City?
 
 }
