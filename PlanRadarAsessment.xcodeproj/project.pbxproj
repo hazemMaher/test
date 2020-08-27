@@ -33,6 +33,11 @@
 		A1B5D29E24F7BC7600617CE0 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5D29A24F7BC7500617CE0 /* Utility.swift */; };
 		A1B5D29F24F7BC7600617CE0 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5D29B24F7BC7500617CE0 /* LoadingView.swift */; };
 		A1B5D2A224F7BD8100617CE0 /* StateHandlerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5D2A124F7BD8100617CE0 /* StateHandlerTableView.swift */; };
+		A1BA479524F8257E006B604D /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA478C24F8257E006B604D /* AppCoordinator.m */; };
+		A1BA479624F8257E006B604D /* BaseCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA478D24F8257E006B604D /* BaseCoordinator.m */; };
+		A1BA479724F8257E006B604D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA479024F8257E006B604D /* Router.swift */; };
+		A1BA479824F8257E006B604D /* RouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA479124F8257E006B604D /* RouterImplementation.swift */; };
+		A1BA479924F8257E006B604D /* RESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA479424F8257E006B604D /* RESTClient.m */; };
 		C7FBF89B10722947E42891AF /* Pods_PlanRadarAsessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FFF7260B927F2D6110AAE9 /* Pods_PlanRadarAsessment.framework */; };
 		EA7A2CA7211B7CE384A393C1 /* Pods_PlanRadarAsessmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8069AFDE19912DAB986D05A5 /* Pods_PlanRadarAsessmentTests.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +87,14 @@
 		A1B5D29A24F7BC7500617CE0 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		A1B5D29B24F7BC7500617CE0 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A1B5D2A124F7BD8100617CE0 /* StateHandlerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateHandlerTableView.swift; sourceTree = "<group>"; };
+		A1BA478B24F8257E006B604D /* BaseCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCoordinator.h; sourceTree = "<group>"; };
+		A1BA478C24F8257E006B604D /* AppCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
+		A1BA478D24F8257E006B604D /* BaseCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCoordinator.m; sourceTree = "<group>"; };
+		A1BA478E24F8257E006B604D /* AppCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
+		A1BA479024F8257E006B604D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A1BA479124F8257E006B604D /* RouterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImplementation.swift; sourceTree = "<group>"; };
+		A1BA479324F8257E006B604D /* RESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClient.h; sourceTree = "<group>"; };
+		A1BA479424F8257E006B604D /* RESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClient.m; sourceTree = "<group>"; };
 		B37CD9CB5F8707C94DE78229 /* Pods-PlanRadarAsessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadarAsessment.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadarAsessment/Pods-PlanRadarAsessment.debug.xcconfig"; sourceTree = "<group>"; };
 		E5FFF7260B927F2D6110AAE9 /* Pods_PlanRadarAsessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanRadarAsessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -266,6 +279,9 @@
 		A1B5D27724F7B90800617CE0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A1BA479224F8257E006B604D /* Client */,
+				A1BA478A24F8257E006B604D /* Coordinator */,
+				A1BA478F24F8257E006B604D /* Router */,
 				9B22001924F7CB5300D1289E /* DTO */,
 				A1B5D2A024F7BD8100617CE0 /* Components */,
 				A1B5D29724F7BC7500617CE0 /* Helper */,
@@ -330,6 +346,35 @@
 				A1B5D2A124F7BD8100617CE0 /* StateHandlerTableView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		A1BA478A24F8257E006B604D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A1BA478B24F8257E006B604D /* BaseCoordinator.h */,
+				A1BA478C24F8257E006B604D /* AppCoordinator.m */,
+				A1BA478D24F8257E006B604D /* BaseCoordinator.m */,
+				A1BA478E24F8257E006B604D /* AppCoordinator.h */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A1BA478F24F8257E006B604D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A1BA479024F8257E006B604D /* Router.swift */,
+				A1BA479124F8257E006B604D /* RouterImplementation.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A1BA479224F8257E006B604D /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				A1BA479324F8257E006B604D /* RESTClient.h */,
+				A1BA479424F8257E006B604D /* RESTClient.m */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,13 +576,18 @@
 				A1B5D29F24F7BC7600617CE0 /* LoadingView.swift in Sources */,
 				A1B5D29E24F7BC7600617CE0 /* Utility.swift in Sources */,
 				A1B5D28924F7BBE500617CE0 /* Identifiable.swift in Sources */,
+				A1BA479524F8257E006B604D /* AppCoordinator.m in Sources */,
 				A1B5D2A224F7BD8100617CE0 /* StateHandlerTableView.swift in Sources */,
 				A1B5D29324F7BC4800617CE0 /* UIViewController+Extensions.swift in Sources */,
 				A1B5D25124F7B80B00617CE0 /* CityListViewController.swift in Sources */,
+				A1BA479724F8257E006B604D /* Router.swift in Sources */,
+				A1BA479624F8257E006B604D /* BaseCoordinator.m in Sources */,
 				A1B5D29524F7BC4800617CE0 /* UITableView+Extensions.swift in Sources */,
 				A1B5D29D24F7BC7600617CE0 /* AlertView.swift in Sources */,
+				A1BA479924F8257E006B604D /* RESTClient.m in Sources */,
 				9B22002524F7E70E00D1289E /* DatastoreManager.swift in Sources */,
 				A1B5D24D24F7B80B00617CE0 /* AppDelegate.swift in Sources */,
+				A1BA479824F8257E006B604D /* RouterImplementation.swift in Sources */,
 				A1B5D24F24F7B80B00617CE0 /* SceneDelegate.swift in Sources */,
 				A1B5D25724F7B80B00617CE0 /* PlanRadarAsessment.xcdatamodeld in Sources */,
 			);
